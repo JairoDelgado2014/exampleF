@@ -3,15 +3,14 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ClientComponent } from './client/client.component';
-import {ClienteService} from '../app/service/cliente.service';
-import { HttpClientModule } from '@angular/common/http';
-import { AddComponent } from './add/add.component';
 import { FormsModule } from '@angular/forms';
-import {NgbModal} from '@ng-bootstrap/ng-bootstrap';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
-
+import { HttpClientModule } from '@angular/common/http';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ClientComponent } from './client/client.component';
+import { ClienteService } from './service/cliente.service';
+import { AddComponent } from './add/add.component';
+import {TableModule} from 'primeng/table';
 
 @NgModule({
   declarations: [
@@ -21,13 +20,15 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     AppRoutingModule,
-    HttpClientModule,
-    FormsModule,
-    NgbModule
-
+    FormsModule,   
+    HttpClientModule,   
+    TableModule
   ],
-  providers: [ClienteService],
+  providers: [
+    ClienteService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,45 +1,40 @@
-<ng-template #content let-modal>
-    <div class="container col-md-12">
-        <div class="card">
-            <div class="card-header">
-                Create New Client
-            </div>
-            <div class="card-body">
-                <form>
-                    <div class="form control">
-                        <label for="ShareKey">BusinessId</label>
-                        <input type="text" class="form-control">
-                    </div>
-                    <div class="form control">
-                        <label for="ShareKey">businessId</label>
-                        <input type="text" class="form-control" [(ngModel)]="businessId" name="businessId">
-                    </div>
-                    <div class="form control">
-                        <label for="ShareKey">shareKey</label>
-                        <input type="text" class="form-control" [(ngModel)]="shareKey" name="shareKey">
-                    </div>
-                    <div class="form control">
-                        <label for="ShareKey">phone</label>
-                        <input type="text" class="form-control" [(ngModel)]="phone" name="phone">
-                    </div>
-                    <div class="form control">
-                        <label for="ShareKey">email</label>
-                        <input type="text" class="form-control" [(ngModel)]="email" name="email">
-                    </div>
-                    <div class="form control">
-                        <label for="ShareKey">Estado</label>
-                        <input class="form-control" [(ngModel)]="estado" name="estado">
-                    </div>
-                </form>
-            </div>
-            <div class="card-footer">
-                <button (click)="guardar()" class="btn btn-primary">Ok</button>
-                <button class="btn btn-danger">Cancel</button>
-            </div>
+<div class="container col-md-12">
+    <div class="card">
+        <div class="card-header">
+            Create New Client
         </div>
-        <h1>
-        </h1>
+        <div class="card-body">
+            <form>
+                <div class="form control">
+                    <label for="ShareKey">BusinessId</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="form control">
+                    <label for="ShareKey">businessId</label>
+                    <input type="text" class="form-control" [(ngModel)]="businessId" name="businessId">
+                </div>
+                <div class="form control">
+                    <label for="ShareKey">shareKey</label>
+                    <input type="text" class="form-control" [(ngModel)]="shareKey" name="shareKey">
+                </div>
+                <div class="form control">
+                    <label for="ShareKey">phone</label>
+                    <input type="text" class="form-control" [(ngModel)]="phone" name="phone">
+                </div>
+                <div class="form control">
+                    <label for="ShareKey">email</label>
+                    <input type="text" class="form-control" [(ngModel)]="email" name="email">
+                </div>
+                <div class="form control">
+                    <label for="ShareKey">Estado</label>
+                    <input class="form-control" [(ngModel)]="estado" name="estado">
+                </div>
+            </form>
+        </div>
+        <div class="card-footer">
+            <button (click)="guardar()" class="btn btn-primary">Ok</button>
+        </div>
     </div>
-</ng-template>
-
-<button class="btn btn-primary" (click)="open(content)">New</button>
+    <h1>
+    </h1>
+</div>
